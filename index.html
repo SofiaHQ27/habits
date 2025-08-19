@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="Habits.css">
+</head>
+<body>
+
+<select id="month-selector"></select>
+<div id="tracker"></div>
+<div id="buttons-bar">
+  <button onclick="addNewMonth()">Nuovo mese</button>
+  <button onclick="deleteCurrentMonth()">Elimina mese</button>
+  <button onclick="editHabits()">Modifica abitudini</button>
+</div>
+
+  <div id="habit-modal" class="modal" style="display:none;">
+  <div class="modal-content">
+  <span class="close" onclick="closeModal()">×</span>
+  <div id="modal-body"></div>
+  <div class="modal-footer">
+    <button id="done-button" onclick="closeModal()">Fine</button>
+  </div>
+</div>
+</div>
+
+  <script src="Habits.js"></script>
+
+</body>
+</html>
